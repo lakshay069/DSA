@@ -2,7 +2,7 @@
 using namespace std;
 int e(int x,int n){
     static int p=1,f=1;
-    int r;
+     int r;
     if(n==0)
     return 1;
     else{
@@ -11,6 +11,11 @@ int e(int x,int n){
         f=f*n;
         return r+p/f;
     }
+     //static int p=1;
+   //if(n==0)
+    //return p;
+    //p=1+x/n*p;
+   //return e(x,n-1);
 }
 int main(){
     int x,n;
